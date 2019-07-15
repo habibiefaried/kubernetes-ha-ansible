@@ -1,0 +1,72 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+    - name: "Install python"
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - python
+
+- hosts: master,slave
+  become: true
+  tasks:
+    - name: "Check hostname"
+      shell: "hostname"
+      register: host_out
+
+    - debug: var=host_out.stdout_lines
+
+    - name: "Install docker dependencies"
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - apt-transport-https
+        - ca-certificates
+        - curl
+        - software-properties-common
+
+    - name: "Add APT key"
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        validate_certs: no
+        state: present
+
+    - name: "Get the version"
+      shell: "lsb_release -cs"
+      register: ubuntu_version
+
+    - name: "Add APT Repository"
+      apt_repository:
+        repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ubuntu_version.stdout}} stable
+        state: present
+
+    - name: "Install docker dependencies"
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - docker-ce=18.06.2~ce~3-0~ubuntu
+
+    - name: Copy docker config file
+      copy:
+        src: etc-docker-daemon.json
+        dest: /etc/docker/daemon.json
+
+    - name: Creates directory
+      file:
+        path: /etc/systemd/system/docker.service.d
+        state: directory
+
+    - name: Remove swapfile from /etc/fstab
+      mount:
+        name: swap
+        fstype: swap
+        state: absent
+
+    - name: Disable swap
+      command: swapoff -a
+      when: ansible_swaptotal_mb > 0
+
+    - name: Restart docker
+      systemd:
+        state: restarted
+        daemon_reload: yes
+        name: docker

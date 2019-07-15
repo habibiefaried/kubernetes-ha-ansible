@@ -1,0 +1,13 @@
+[master]
+ec2-35-178-105-252.eu-west-2.compute.amazonaws.com
+
+[slave]
+ec2-35-178-105-252.eu-west-2.compute.amazonaws.com
+
+[loadbalancer]
+ec2-35-178-167-149.eu-west-2.compute.amazonaws.com
+
+[all:vars]
+ansible_connection=ssh
+ansible_ssh_user=ubuntu
+ansible_ssh_private_key_file=key.pem
