@@ -1,14 +1,49 @@
 ---
 
+- name: Inventory validation
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - assert:
+        that:
+          - "groups['loadbalancer'] | length == 1"
+          - "groups['initroot'] | length == 1"
+
+- hosts: all
+  gather_facts: False
+  tasks:
+    - name: install python 2
+      raw: test -e /usr/bin/python || (sudo apt -y update && sudo apt install -y python-minimal)
+
 - hosts: all
   become: true
   tasks:
-    - name: "Install python"
+    - name: "Install pre-req"
       apt: name={{item}} state=present update_cache=yes
       with_items:
         - python
+        - openssl
 
-- hosts: master,slave
+- hosts: loadbalancer
+  become: true
+  tasks:
+    - name: "Installing HA Proxy"
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - haproxy
+        - liblua5.3-0
+        - vim-haproxy
+        - haproxy-doc
+
+    - name: "Configure HA Proxy"
+      template: src=etc-haproxy-haproxy.cfg.j2 dest=/etc/haproxy/haproxy.cfg mode=0644
+      notify: restart haproxy
+
+  handlers:
+    - name: restart haproxy
+      service: name=haproxy state=restarted
+
+- hosts: master,slave,initroot
   become: true
   tasks:
     - name: "Check hostname"
@@ -70,3 +105,56 @@
         state: restarted
         daemon_reload: yes
         name: docker
+
+    - name: "Add APT key install kubelet kubeadm kubectl"
+      apt_key:
+        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+        validate_certs: no
+        state: present
+
+    - name: "Add APT Repository install kubelet kubeadm kubectl"
+      apt_repository:
+        repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
+        state: present
+
+    - name: "Install kubeadm dependencies"
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - kubelet
+        - kubeadm
+        - kubectl
+
+- hosts: initroot
+  become: true
+  tasks:
+    - name: Put initial kubeadm config
+      template: src=root-kubeadm-config-yaml.j2 dest=/root/kubeadm-config.yaml mode=0644
+
+    - name: Init kubeadm
+      command: kubeadm init --config=/root/kubeadm-config.yaml --upload-certs
+      register: output_after_init
+      ignore_errors: yes 
+
+    - debug: var=output_after_init.stdout_lines
+
+    - local_action: copy content={{ output_after_init.stdout_lines }} dest=output_after_init.log
+
+    - name: Get join string
+      command: kubeadm token create --print-join-command
+      register: join_command
+
+    - name: Setting up kubectl
+      file:
+        path: /root/.kube
+        state: directory
+
+    - name: Copying and set chmod
+      command: cp /etc/kubernetes/admin.conf /root/.kube/config && chown root:root /root/.kube/config
+
+- hosts: slave
+  become: true
+  tasks:
+    - debug: var=join_command.stdout_lines
+
+    - name: "Init for slave"
+      command: join_command.stdout
