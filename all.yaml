@@ -152,12 +152,6 @@
 
     - debug: var=output_after_init.stdout_lines
 
-    - name: "Saving the certificate key"
-      add_host: 
-        name: "CERT_KEY"
-        value: "{{ output_after_init.stdout_lines[39] }}"
-      ignore_errors: yes
-
     - name: Get join string
       command: kubeadm token create --print-join-command
       register: join_command
@@ -203,10 +197,8 @@
 - hosts: master
   become: true
   tasks:
-    - debug: var=hostvars['CERT_KEY']['value']
-
     - name: "Init for master"
-      shell: "{{ hostvars['JOIN_COMMAND']['cmd'] }} --control-plane --certificate-key {{ hostvars['CERT_KEY']['value'] }}"
+      shell: "{{ hostvars['JOIN_COMMAND']['cmd'] }} --control-plane --certificate-key {{ cert_key }}"
 
     - name: Setting up kubectl
       file:
