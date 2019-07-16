@@ -19,10 +19,10 @@ backend nodes
 frontend kubedashboard
     bind *:443
     mode tcp
-    default_backend kubebackup
+    default_backend kubebackend
     timeout client          1m
 
-backend kubebackup
+backend kubebackend
     mode tcp
     balance roundrobin
 {% for server in groups.master %}
