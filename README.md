@@ -8,5 +8,5 @@
 # Tested on
 * AWS Ubuntu 18.04
 
-# To Do
-* Add proxy master into haproxy cfg at the end of executions
+# CAUTION
+This is only for fresh install! The script to add either master/worker nodes is under development

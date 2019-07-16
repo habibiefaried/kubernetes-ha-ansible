@@ -231,3 +231,11 @@
   handlers:
     - name: restart haproxy
       service: name=haproxy state=restarted
+
+- hosts: initroot
+  become: true
+  tasks:
+    - name: Copy kubernetes dashboard file
+      copy:
+        src: kubernetes-dashboard.yaml
+        dest: /root/kubernetes-dashboard.yaml
