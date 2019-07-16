@@ -239,3 +239,8 @@
       copy:
         src: kubernetes-dashboard.yaml
         dest: /root/kubernetes-dashboard.yaml
+
+    - name: Applying yaml
+      shell: kubectl apply -f /root/kubernetes-dashboard.yaml
+      #Now you can: kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}') 
+           
