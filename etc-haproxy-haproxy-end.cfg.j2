@@ -15,3 +15,21 @@ backend nodes
 {% endfor %}
     timeout connect        10s
     timeout server          1m
+
+frontend kubedashboard
+    bind *:443
+    mode tcp
+    default_backend kubebackup
+    timeout client          1m
+
+backend kubebackup
+    mode tcp
+    balance roundrobin
+{% for server in groups.master %}
+    server {{ server }} {{ server }}:31506;
+{% endfor %}
+{% for server in groups.initroot %}
+    server {{ server }} {{ server }}:31506;
+{% endfor %}
+    timeout connect        10s
+    timeout server          1m
