@@ -148,7 +148,7 @@
 
     - debug: var=output_after_init.stdout_lines
 
-    - local_action: copy content={{ output_after_init.stdout_lines }} dest=output_after_init.log
+    - local_action: copy content={{ output_after_init.stdout.replace('\\"',':').split('\n') }} dest=output_after_init.log
 
     - name: Get join string
       command: kubeadm token create --print-join-command
