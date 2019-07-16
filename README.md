@@ -7,3 +7,6 @@
 
 # Tested on
 * AWS Ubuntu 18.04
+
+# To Do
+* Add proxy master into haproxy cfg at the end of executions

@@ -7,6 +7,9 @@ frontend localnodes
 backend nodes
     mode tcp
     balance roundrobin
+{% for server in groups.master %}
+    server {{ server }} {{ server }}:6443;
+{% endfor %}
 {% for server in groups.initroot %}
     server {{ server }} {{ server }}:6443;
 {% endfor %}
