@@ -8,6 +8,11 @@
         that:
           - "groups['loadbalancer'] | length == 1"
           - "groups['initroot'] | length == 1"
+          - "groups['initroot'][0] != groups['loadbalancer'][0]"
+    - assert: { that: "'{{ item }}' not in groups['slave']" }
+      with_items: "{{ groups['master'] }}"
+    - assert: { that: "'{{ item }}' not in groups['slave']" }
+      with_items: "{{ groups['loadbalancer'] }}"
 
 - hosts: all
   gather_facts: False
@@ -97,7 +102,7 @@
         state: absent
 
     - name: Disable swap
-      command: swapoff -a
+      shell: swapoff -a
       when: ansible_swaptotal_mb > 0
 
     - name: Restart docker
@@ -131,7 +136,7 @@
       template: src=root-kubeadm-config-yaml.j2 dest=/root/kubeadm-config.yaml mode=0644
 
     - name: Init kubeadm
-      command: kubeadm init --config=/root/kubeadm-config.yaml --upload-certs
+      shell: kubeadm init --config=/root/kubeadm-config.yaml --upload-certs
       register: output_after_init
       ignore_errors: yes 
 
@@ -143,18 +148,39 @@
       command: kubeadm token create --print-join-command
       register: join_command
 
+    - name: "Add command string into joining hosts"
+      add_host:
+         name: "JOIN_COMMAND"
+         cmd: "{{join_command.stdout}}"
+
     - name: Setting up kubectl
       file:
-        path: /root/.kube
+        path: /root/.kube/
         state: directory
 
     - name: Copying and set chmod
-      command: cp /etc/kubernetes/admin.conf /root/.kube/config && chown root:root /root/.kube/config
+      copy:
+        src: /etc/kubernetes/admin.conf
+        dest: /root/.kube/config
+        remote_src: yes
+        mode: '0600'
+
+    - name: Get kubectl version
+      shell: kubectl version | base64 | tr -d '\n'
+      register: kubectl_version
+
+    - debug: var=kubectl_version.stdout_lines
+
+    - name: Run network (weave works)
+      shell: kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version={{ kubectl_version.stdout }}"
+      ignore_errors: yes
+
 
 - hosts: slave
   become: true
   tasks:
-    - debug: var=join_command.stdout_lines
+    - debug: var=hostvars['JOIN_COMMAND']['cmd']
 
     - name: "Init for slave"
-      command: join_command.stdout
+      shell: "{{ hostvars['JOIN_COMMAND']['cmd'] }}"
+      ignore_errors: yes
