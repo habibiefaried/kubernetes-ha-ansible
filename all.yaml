@@ -241,11 +241,10 @@
         dest: /root/kubernetes-dashboard.yaml
 
     - name: Applying yaml
-      shell: kubectl apply -f /root/kubernetes-dashboard.yaml
-      #Now you can: kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}') 
+      shell: kubectl apply -f /root/kubernetes-dashboard.yaml 
            
     - name: Take token
-      shell: kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | awk '/^deployment-controller-token-/{print $1}') | awk '$1=="token:"{print $2}'
+      shell: kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | awk '/^admin-user-token-/{print $1}') | awk '$1=="token:"{print $2}'
       register: user_token
 
     - debug: var=user_token.stdout

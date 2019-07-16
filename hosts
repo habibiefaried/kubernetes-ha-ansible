@@ -1,14 +1,14 @@
 [initroot]
-ec2-3-8-176-147.eu-west-2.compute.amazonaws.com
+ec2-3-8-184-213.eu-west-2.compute.amazonaws.com
 
 [master]
-ec2-35-178-173-212.eu-west-2.compute.amazonaws.com
+ec2-18-130-71-218.eu-west-2.compute.amazonaws.com
 
 [slave]
-ec2-3-9-191-33.eu-west-2.compute.amazonaws.com
+ec2-3-8-87-127.eu-west-2.compute.amazonaws.com
 
 [loadbalancer]
-ec2-35-178-193-176.eu-west-2.compute.amazonaws.com
+ec2-3-9-170-96.eu-west-2.compute.amazonaws.com
 
 [all:vars]
 ansible_connection=ssh
