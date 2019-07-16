@@ -4,3 +4,6 @@
 * Slave will be joining to init root
 * Loadbalancer is using haproxy
 * If everything just good, then run command: 'ansible-playbook -i hosts all.yaml'
+
+# Tested on
+* AWS Ubuntu 18.04
