@@ -147,8 +147,12 @@
       ignore_errors: yes 
 
     - debug: var=output_after_init.stdout_lines
+    - debug: var=output_after_init.stdout_lines[39]
 
-    - local_action: copy content={{ output_after_init.stdout.replace('\\"',':').split('\n') }} dest=output_after_init.log
+    - name: "Saving the certificate key"
+      add_host: 
+        name: "CERT_KEY"
+        value: "{{ output_after_init.stdout_lines[39] }}"
 
     - name: Get join string
       command: kubeadm token create --print-join-command
@@ -157,7 +161,7 @@
     - name: "Add command string into joining hosts"
       add_host:
          name: "JOIN_COMMAND"
-         cmd: "{{join_command.stdout}}"
+         cmd: "{{ join_command.stdout }}"
 
     - name: Setting up kubectl
       file:
