@@ -185,6 +185,7 @@
 
 # Prepare for working/slave nodes
 - hosts: slave
+  serial: 1
   become: true
   tasks:
     - debug: var=hostvars['JOIN_COMMAND']['cmd']
@@ -195,6 +196,7 @@
 
 # Joining as control-plane to init-plan above
 - hosts: master
+  serial: 1
   become: true
   tasks:
     - name: "Init for master"
