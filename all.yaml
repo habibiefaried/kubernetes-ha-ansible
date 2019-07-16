@@ -13,6 +13,12 @@
       with_items: "{{ groups['master'] }}"
     - assert: { that: "'{{ item }}' not in groups['slave']" }
       with_items: "{{ groups['loadbalancer'] }}"
+    - assert: { that: "'{{ item }}' not in groups['initroot']" }
+      with_items: "{{ groups['master'] }}"
+    - assert: { that: "'{{ item }}' not in groups['initroot']" }
+      with_items: "{{ groups['slave'] }}"
+    - assert: { that: "'{{ item }}' not in groups['master']" }
+      with_items: "{{ groups['loadbalancer'] }}"
 
 - hosts: all
   gather_facts: False
