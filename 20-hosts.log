@@ -1,0 +1,2382 @@
+$ time ansible-playbook -i hosts all.yaml 
+ _____________________________
+< PLAY [Inventory validation] >
+ -----------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ _______________
+< TASK [assert] >
+ ---------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [localhost] => {
+    "changed": false, 
+    "msg": "All assertions passed"
+}
+ _______________
+< TASK [assert] >
+ ---------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [localhost] => (item=ec2-35-176-55-42.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-35-176-55-42.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-18-130-156-79.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-18-130-156-79.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-35-177-136-33.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-35-177-136-33.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-3-8-180-159.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-3-8-180-159.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ _______________
+< TASK [assert] >
+ ---------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [localhost] => (item=ec2-18-130-113-31.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-18-130-113-31.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ _______________
+< TASK [assert] >
+ ---------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [localhost] => (item=ec2-35-176-55-42.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-35-176-55-42.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-18-130-156-79.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-18-130-156-79.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-35-177-136-33.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-35-177-136-33.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-3-8-180-159.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-3-8-180-159.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ _______________
+< TASK [assert] >
+ ---------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [localhost] => (item=ec2-3-9-179-96.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-3-9-179-96.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-35-178-232-38.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-35-178-232-38.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-18-130-250-135.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-18-130-250-135.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-35-178-145-223.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-35-178-145-223.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-35-178-253-123.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-35-178-253-123.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-18-130-3-152.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-18-130-3-152.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-35-176-16-92.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-35-176-16-92.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-3-9-114-204.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-3-9-114-204.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-3-8-89-99.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-3-8-89-99.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-52-56-118-139.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-52-56-118-139.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-3-8-2-166.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-3-8-2-166.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-18-130-206-49.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-18-130-206-49.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-35-178-67-213.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-35-178-67-213.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ok: [localhost] => (item=ec2-18-130-35-189.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-18-130-35-189.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ _______________
+< TASK [assert] >
+ ---------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [localhost] => (item=ec2-18-130-113-31.eu-west-2.compute.amazonaws.com) => {
+    "changed": false, 
+    "item": "ec2-18-130-113-31.eu-west-2.compute.amazonaws.com", 
+    "msg": "All assertions passed"
+}
+ ____________
+< PLAY [all] >
+ ------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ _________________________
+< TASK [install python 2] >
+ -------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-113-31.eu-west-2.compute.amazonaws.com]
+ ____________
+< PLAY [all] >
+ ------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+ok: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-113-31.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ________________________
+< TASK [Install pre-req] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-18-130-113-31.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ok: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com] => (item=[u'python', u'openssl'])
+ _____________________
+< PLAY [loadbalancer] >
+ ---------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-113-31.eu-west-2.compute.amazonaws.com]
+ ____________________________
+< TASK [Installing HA Proxy] >
+ ----------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-113-31.eu-west-2.compute.amazonaws.com] => (item=[u'haproxy', u'liblua5.3-0', u'vim-haproxy', u'haproxy-doc'])
+ ___________________________
+< TASK [Configure HA Proxy] >
+ ---------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-113-31.eu-west-2.compute.amazonaws.com]
+ ___________________________________
+< RUNNING HANDLER [restart haproxy] >
+ -----------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-113-31.eu-west-2.compute.amazonaws.com]
+ ______________________________
+< PLAY [master,slave,initroot] >
+ ------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+ok: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+ _______________________
+< TASK [Check hostname] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-46-180"
+    ]
+}
+ok: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-0-127"
+    ]
+}
+ok: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-12-184"
+    ]
+}
+ok: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-33-69"
+    ]
+}
+ok: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-30-189"
+    ]
+}
+ok: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-2-137"
+    ]
+}
+ok: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-37-87"
+    ]
+}
+ok: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-22-170"
+    ]
+}
+ok: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-11-179"
+    ]
+}
+ok: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-10-171"
+    ]
+}
+ok: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-20-67"
+    ]
+}
+ok: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-21-88"
+    ]
+}
+ok: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-8-91"
+    ]
+}
+ok: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-44-213"
+    ]
+}
+ok: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-18-117"
+    ]
+}
+ok: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-36-98"
+    ]
+}
+ok: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-15-205"
+    ]
+}
+ok: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-32-202"
+    ]
+}
+ok: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com] => {
+    "host_out.stdout_lines": [
+        "ip-172-31-40-218"
+    ]
+}
+ ____________________________________
+< TASK [Install docker dependencies] >
+ ------------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com] => (item=[u'apt-transport-https', u'ca-certificates', u'curl', u'software-properties-common'])
+ ____________________
+< TASK [Add APT key] >
+ --------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ________________________
+< TASK [Get the version] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ___________________________
+< TASK [Add APT Repository] >
+ ---------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ____________________________________
+< TASK [Install docker dependencies] >
+ ------------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com] => (item=[u'docker-ce=18.06.2~ce~3-0~ubuntu'])
+ ________________________________
+< TASK [Copy docker config file] >
+ --------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+ __________________________
+< TASK [Creates directory] >
+ --------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+ ________________________________________
+< TASK [Remove swapfile from /etc/fstab] >
+ ----------------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+ok: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+ok: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ok: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+ok: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+ _____________________
+< TASK [Disable swap] >
+ ---------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+skipping: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+skipping: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ _______________________
+< TASK [Restart docker] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+ ____________________________________________________
+< TASK [Add APT key install kubelet kubeadm kubectl] >
+ ----------------------------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+ ___________________________________________________________
+< TASK [Add APT Repository install kubelet kubeadm kubectl] >
+ -----------------------------------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+ _____________________________________
+< TASK [Install kubeadm dependencies] >
+ -------------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com] => (item=[u'kubelet', u'kubeadm', u'kubectl'])
+ _________________
+< PLAY [initroot] >
+ -----------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ___________________________________
+< TASK [Put initial kubeadm config] >
+ -----------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ _____________________
+< TASK [Init kubeadm] >
+ ---------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com] => {
+    "output_after_init.stdout_lines": [
+        "[init] Using Kubernetes version: v1.15.0", 
+        "[preflight] Running pre-flight checks", 
+        "[preflight] Pulling images required for setting up a Kubernetes cluster", 
+        "[preflight] This might take a minute or two, depending on the speed of your internet connection", 
+        "[preflight] You can also perform this action in beforehand using 'kubeadm config images pull'", 
+        "[kubelet-start] Writing kubelet environment file with flags to file \"/var/lib/kubelet/kubeadm-flags.env\"", 
+        "[kubelet-start] Writing kubelet configuration to file \"/var/lib/kubelet/config.yaml\"", 
+        "[kubelet-start] Activating the kubelet service", 
+        "[certs] Using certificateDir folder \"/etc/kubernetes/pki\"", 
+        "[certs] Generating \"ca\" certificate and key", 
+        "[certs] Generating \"apiserver-kubelet-client\" certificate and key", 
+        "[certs] Generating \"apiserver\" certificate and key", 
+        "[certs] apiserver serving cert is signed for DNS names [ip-172-31-40-218 kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local ec2-18-130-113-31.eu-west-2.compute.amazonaws.com] and IPs [10.96.0.1 172.31.40.218]", 
+        "[certs] Generating \"front-proxy-ca\" certificate and key", 
+        "[certs] Generating \"front-proxy-client\" certificate and key", 
+        "[certs] Generating \"etcd/ca\" certificate and key", 
+        "[certs] Generating \"etcd/server\" certificate and key", 
+        "[certs] etcd/server serving cert is signed for DNS names [ip-172-31-40-218 localhost] and IPs [172.31.40.218 127.0.0.1 ::1]", 
+        "[certs] Generating \"etcd/peer\" certificate and key", 
+        "[certs] etcd/peer serving cert is signed for DNS names [ip-172-31-40-218 localhost] and IPs [172.31.40.218 127.0.0.1 ::1]", 
+        "[certs] Generating \"apiserver-etcd-client\" certificate and key", 
+        "[certs] Generating \"etcd/healthcheck-client\" certificate and key", 
+        "[certs] Generating \"sa\" key and public key", 
+        "[kubeconfig] Using kubeconfig folder \"/etc/kubernetes\"", 
+        "[kubeconfig] Writing \"admin.conf\" kubeconfig file", 
+        "[kubeconfig] Writing \"kubelet.conf\" kubeconfig file", 
+        "[kubeconfig] Writing \"controller-manager.conf\" kubeconfig file", 
+        "[kubeconfig] Writing \"scheduler.conf\" kubeconfig file", 
+        "[control-plane] Using manifest folder \"/etc/kubernetes/manifests\"", 
+        "[control-plane] Creating static Pod manifest for \"kube-apiserver\"", 
+        "[control-plane] Creating static Pod manifest for \"kube-controller-manager\"", 
+        "[control-plane] Creating static Pod manifest for \"kube-scheduler\"", 
+        "[etcd] Creating static Pod manifest for local etcd in \"/etc/kubernetes/manifests\"", 
+        "[wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory \"/etc/kubernetes/manifests\". This can take up to 4m0s", 
+        "[apiclient] All control plane components are healthy after 17.515205 seconds", 
+        "[upload-config] Storing the configuration used in ConfigMap \"kubeadm-config\" in the \"kube-system\" Namespace", 
+        "[kubelet] Creating a ConfigMap \"kubelet-config-1.15\" in namespace kube-system with the configuration for the kubelets in the cluster", 
+        "[upload-certs] Storing the certificates in Secret \"kubeadm-certs\" in the \"kube-system\" Namespace", 
+        "[upload-certs] Using certificate key:", 
+        "e6a2eb8581237ab72a4f494f30285ec12a9694d750b9785706a83bfcbbbd2204", 
+        "[mark-control-plane] Marking the node ip-172-31-40-218 as control-plane by adding the label \"node-role.kubernetes.io/master=''\"", 
+        "[mark-control-plane] Marking the node ip-172-31-40-218 as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]", 
+        "[bootstrap-token] Using token: grla5h.xf1mfszqwjlllegi", 
+        "[bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles", 
+        "[bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials", 
+        "[bootstrap-token] configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token", 
+        "[bootstrap-token] configured RBAC rules to allow certificate rotation for all node client certificates in the cluster", 
+        "[bootstrap-token] Creating the \"cluster-info\" ConfigMap in the \"kube-public\" namespace", 
+        "[addons] Applied essential addon: CoreDNS", 
+        "[addons] Applied essential addon: kube-proxy", 
+        "", 
+        "Your Kubernetes control-plane has initialized successfully!", 
+        "", 
+        "To start using your cluster, you need to run the following as a regular user:", 
+        "", 
+        "  mkdir -p $HOME/.kube", 
+        "  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config", 
+        "  sudo chown $(id -u):$(id -g) $HOME/.kube/config", 
+        "", 
+        "You should now deploy a pod network to the cluster.", 
+        "Run \"kubectl apply -f [podnetwork].yaml\" with one of the options listed at:", 
+        "  https://kubernetes.io/docs/concepts/cluster-administration/addons/", 
+        "", 
+        "You can now join any number of the control-plane node running the following command on each as root:", 
+        "", 
+        "  kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token grla5h.xf1mfszqwjlllegi \\", 
+        "    --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a \\", 
+        "    --experimental-control-plane --certificate-key e6a2eb8581237ab72a4f494f30285ec12a9694d750b9785706a83bfcbbbd2204", 
+        "", 
+        "Please note that the certificate-key gives access to cluster sensitive data, keep it secret!", 
+        "As a safeguard, uploaded-certs will be deleted in two hours; If necessary, you can use ", 
+        "\"kubeadm init phase upload-certs --upload-certs\" to reload certs afterward.", 
+        "", 
+        "Then you can join any number of worker nodes by running the following on each as root:", 
+        "", 
+        "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token grla5h.xf1mfszqwjlllegi \\", 
+        "    --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+    ]
+}
+ ________________________
+< TASK [Get join string] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ______________________________________________
+< TASK [Add command string into joining hosts] >
+ ----------------------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ___________________________
+< TASK [Setting up kubectl] >
+ ---------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ______________________________
+< TASK [Copying and set chmod] >
+ ------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ____________________________
+< TASK [Get kubectl version] >
+ ----------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com] => {
+    "kubectl_version.stdout_lines": [
+        "Q2xpZW50IFZlcnNpb246IHZlcnNpb24uSW5mb3tNYWpvcjoiMSIsIE1pbm9yOiIxNSIsIEdpdFZlcnNpb246InYxLjE1LjAiLCBHaXRDb21taXQ6ImU4NDYyYjViNWRjMjU4NGZkY2QxOGU2YmNmZTlmMWU0ZDk3MGE1MjkiLCBHaXRUcmVlU3RhdGU6ImNsZWFuIiwgQnVpbGREYXRlOiIyMDE5LTA2LTE5VDE2OjQwOjE2WiIsIEdvVmVyc2lvbjoiZ28xLjEyLjUiLCBDb21waWxlcjoiZ2MiLCBQbGF0Zm9ybToibGludXgvYW1kNjQifQpTZXJ2ZXIgVmVyc2lvbjogdmVyc2lvbi5JbmZve01ham9yOiIxIiwgTWlub3I6IjE1IiwgR2l0VmVyc2lvbjoidjEuMTUuMCIsIEdpdENvbW1pdDoiZTg0NjJiNWI1ZGMyNTg0ZmRjZDE4ZTZiY2ZlOWYxZTRkOTcwYTUyOSIsIEdpdFRyZWVTdGF0ZToiY2xlYW4iLCBCdWlsZERhdGU6IjIwMTktMDYtMTlUMTY6MzI6MTRaIiwgR29WZXJzaW9uOiJnbzEuMTIuNSIsIENvbXBpbGVyOiJnYyIsIFBsYXRmb3JtOiJsaW51eC9hbWQ2NCJ9Cg=="
+    ]
+}
+ __________________________________
+< TASK [Run network (weave works)] >
+ ----------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-9-179-96.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-178-232-38.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-250-135.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-178-145-223.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-178-253-123.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-3-152.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-176-16-92.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-9-114-204.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-89-99.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-52-56-118-139.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-2-166.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-206-49.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-178-67-213.eu-west-2.compute.amazonaws.com]
+ ______________
+< PLAY [slave] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com] => {
+    "hostvars['JOIN_COMMAND']['cmd']": "kubeadm join ec2-18-130-113-31.eu-west-2.compute.amazonaws.com:6443 --token ukod8f.znp1qluji9z8yyml     --discovery-token-ca-cert-hash sha256:619d5bea52e00a42d8fe9e4db91feec16e6e15e93b6b9e864412b84801d1e29a "
+}
+ _______________________
+< TASK [Init for slave] >
+ -----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-35-189.eu-west-2.compute.amazonaws.com]
+ _______________
+< PLAY [master] >
+ ---------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+ ________________________
+< TASK [Init for master] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+ ___________________________
+< TASK [Setting up kubectl] >
+ ---------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+ ______________________________
+< TASK [Copying and set chmod] >
+ ------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-176-55-42.eu-west-2.compute.amazonaws.com]
+ _______________
+< PLAY [master] >
+ ---------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+ ________________________
+< TASK [Init for master] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+ ___________________________
+< TASK [Setting up kubectl] >
+ ---------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+ ______________________________
+< TASK [Copying and set chmod] >
+ ------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-156-79.eu-west-2.compute.amazonaws.com]
+ _______________
+< PLAY [master] >
+ ---------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+ ________________________
+< TASK [Init for master] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+ ___________________________
+< TASK [Setting up kubectl] >
+ ---------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+ ______________________________
+< TASK [Copying and set chmod] >
+ ------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-35-177-136-33.eu-west-2.compute.amazonaws.com]
+ _______________
+< PLAY [master] >
+ ---------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+ ________________________
+< TASK [Init for master] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+ ___________________________
+< TASK [Setting up kubectl] >
+ ---------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+ ______________________________
+< TASK [Copying and set chmod] >
+ ------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-180-159.eu-west-2.compute.amazonaws.com]
+ _____________________
+< PLAY [loadbalancer] >
+ ---------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-18-130-113-31.eu-west-2.compute.amazonaws.com]
+ ___________________________
+< TASK [Configure HA Proxy] >
+ ---------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-113-31.eu-west-2.compute.amazonaws.com]
+ ___________________________________
+< RUNNING HANDLER [restart haproxy] >
+ -----------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-18-130-113-31.eu-west-2.compute.amazonaws.com]
+ _________________
+< PLAY [initroot] >
+ -----------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ _______________________________________
+< TASK [Copy kubernetes dashboard file] >
+ ---------------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ______________________
+< TASK [Applying yaml] >
+ ----------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ___________________
+< TASK [Take token] >
+ -------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+changed: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com]
+ ______________
+< TASK [debug] >
+ --------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ok: [ec2-3-8-94-79.eu-west-2.compute.amazonaws.com] => {
+    "user_token.stdout": "eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhZG1pbi11c2VyLXRva2VuLTJuNXY1Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJjZWRmMzFmMy1jN2M5LTRiNzMtYTNhZS00NTBmNTNjMmIzMTIiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06YWRtaW4tdXNlciJ9.GBYOuaMCtmXhm5MHycs6Ob6KpvMpMWgASW-2nVmA8QMBZ7xLG5_KVWj78_SWpekDMVFgkjILq6dQbgsWDsxvq71dUb5tr79kMwFA34wBpIeDQbg67uYJEG8U8bL5IjYo6_5CFIgs7UbleyFHyPTKbvit88HRO61uy5mU2NbudSr8v5gd3fnWLUAUCnmLdxNgV2iIG60wqq74CIzqxnmnPFQIpzBD8pYhqd9n69XYRwL7_fnXIuDfGPwunTqpPOGZ7_xX2sLyWCQQDUOEpj0GegDOFb1U4t__jI4xivs5Hy6_xxsk5Kkg4YJwYgMRV7GpXMvRaU_NhvZPgW4ZJonpTQ"
+}
+ ____________
+< PLAY RECAP >
+ ------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+ec2-18-130-113-31.eu-west-2.compute.amazonaws.com : ok=10   changed=6    unreachable=0    failed=0   
+ec2-18-130-156-79.eu-west-2.compute.amazonaws.com : ok=22   changed=16   unreachable=0    failed=0   
+ec2-18-130-206-49.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-18-130-250-135.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-18-130-3-152.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-18-130-35-189.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-3-8-180-159.eu-west-2.compute.amazonaws.com : ok=22   changed=16   unreachable=0    failed=0   
+ec2-3-8-2-166.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-3-8-89-99.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-3-8-94-79.eu-west-2.compute.amazonaws.com : ok=34   changed=24   unreachable=0    failed=0   
+ec2-3-9-114-204.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-3-9-179-96.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-35-176-16-92.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-35-176-55-42.eu-west-2.compute.amazonaws.com : ok=22   changed=16   unreachable=0    failed=0   
+ec2-35-177-136-33.eu-west-2.compute.amazonaws.com : ok=22   changed=16   unreachable=0    failed=0   
+ec2-35-178-145-223.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-35-178-232-38.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-35-178-253-123.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-35-178-67-213.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+ec2-52-56-118-139.eu-west-2.compute.amazonaws.com : ok=21   changed=14   unreachable=0    failed=0   
+localhost                  : ok=6    changed=0    unreachable=0    failed=0   
+
+
+real	27m37.720s
+user	4m3.140s
+sys	1m32.609s
