@@ -249,7 +249,7 @@
 
     - debug: var=user_token.stdout
 
-- hosts: initroot,master
+- hosts: initroot
   become: true
   tasks:
     - name: install helm chart
@@ -261,7 +261,7 @@
     - name: svc account tiller for helm
       shell: kubectl create serviceaccount tiller --namespace kube-system
       ignore_errors: yes
-      
+
     - name: tiller-clusterrolebinding.yaml
       copy:
         src: tiller-clusterrolebinding.yaml
