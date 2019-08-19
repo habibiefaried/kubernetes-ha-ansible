@@ -1,30 +1,15 @@
 [initroot]
-ec2-3-8-94-79.eu-west-2.compute.amazonaws.com
+ec2-3-8-2-23.eu-west-2.compute.amazonaws.com
 
 [master]
-ec2-35-176-55-42.eu-west-2.compute.amazonaws.com
-ec2-18-130-156-79.eu-west-2.compute.amazonaws.com
-ec2-35-177-136-33.eu-west-2.compute.amazonaws.com
-ec2-3-8-180-159.eu-west-2.compute.amazonaws.com
+ec2-3-8-21-200.eu-west-2.compute.amazonaws.com
 
 [slave]
-ec2-3-9-179-96.eu-west-2.compute.amazonaws.com
-ec2-35-178-232-38.eu-west-2.compute.amazonaws.com
-ec2-18-130-250-135.eu-west-2.compute.amazonaws.com
-ec2-35-178-145-223.eu-west-2.compute.amazonaws.com
-ec2-35-178-253-123.eu-west-2.compute.amazonaws.com
-ec2-18-130-3-152.eu-west-2.compute.amazonaws.com
-ec2-35-176-16-92.eu-west-2.compute.amazonaws.com
-ec2-3-9-114-204.eu-west-2.compute.amazonaws.com
-ec2-3-8-89-99.eu-west-2.compute.amazonaws.com
-ec2-52-56-118-139.eu-west-2.compute.amazonaws.com
-ec2-3-8-2-166.eu-west-2.compute.amazonaws.com
-ec2-18-130-206-49.eu-west-2.compute.amazonaws.com
-ec2-35-178-67-213.eu-west-2.compute.amazonaws.com
-ec2-18-130-35-189.eu-west-2.compute.amazonaws.com
+ec2-3-8-206-240.eu-west-2.compute.amazonaws.com
+ec2-18-130-248-69.eu-west-2.compute.amazonaws.com
 
 [loadbalancer]
-ec2-18-130-113-31.eu-west-2.compute.amazonaws.com
+ec2-18-130-203-166.eu-west-2.compute.amazonaws.com
 
 [all:vars]
 ansible_connection=ssh
