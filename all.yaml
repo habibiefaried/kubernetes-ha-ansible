@@ -37,6 +37,11 @@
         - python
         - openssl
 
+    - name: Insert a line at the end of a file
+      lineinfile:
+        path: /root/.bashrc
+        line: PATH=$PATH:/snap/bin
+
 - hosts: loadbalancer
   become: true
   tasks:
@@ -214,14 +219,6 @@
         remote_src: yes
         mode: '0600'
 
-    - name: Install helm chart
-      snap:
-        name: helm
-        classic: yes
-
-    - name: init helm
-      shell: /snap/bin/helm init
-
 # Adding master nodes after get finished with initialize master nodes
 - hosts: loadbalancer
   become: true
@@ -249,12 +246,26 @@
       shell: kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | awk '/^admin-user-token-/{print $1}') | awk '$1=="token:"{print $2}'
       register: user_token
 
+    - debug: var=user_token.stdout
+
+- hosts: initroot,master
+  become: true
+  tasks:
     - name: Install helm chart
       snap:
         name: helm
         classic: yes
 
     - name: init helm
-      shell: /snap/bin/helm init
+      shell: helm init
 
-    - debug: var=user_token.stdout
+    - name: svc account tiller for helm
+      shell: kubectl create serviceaccount tiller --namespace kube-system
+
+    - name: tiller-clusterrolebinding.yaml
+      copy:
+        src: tiller-clusterrolebinding.yaml
+        dest: /root/tiller-clusterrolebinding.yaml
+
+    - name: upgrade tiller
+      shell: kubectl create -f tiller-clusterrolebinding.yaml && helm init --service-account tiller --upgrade
