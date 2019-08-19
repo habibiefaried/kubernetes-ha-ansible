@@ -36,6 +36,7 @@
       with_items:
         - python
         - openssl
+        - snapd
 
     - name: Insert a line at the end of a file
       lineinfile:
@@ -251,21 +252,20 @@
 - hosts: initroot,master
   become: true
   tasks:
-    - name: Install helm chart
-      snap:
-        name: helm
-        classic: yes
+    - name: install helm chart
+      shell: snap install helm --classic
 
     - name: init helm
       shell: helm init
 
     - name: svc account tiller for helm
       shell: kubectl create serviceaccount tiller --namespace kube-system
-
+      ignore_errors: yes
+      
     - name: tiller-clusterrolebinding.yaml
       copy:
         src: tiller-clusterrolebinding.yaml
         dest: /root/tiller-clusterrolebinding.yaml
 
     - name: upgrade tiller
-      shell: kubectl create -f tiller-clusterrolebinding.yaml && helm init --service-account tiller --upgrade
+      shell: kubectl apply -f /root/tiller-clusterrolebinding.yaml && helm init --service-account tiller --upgrade
