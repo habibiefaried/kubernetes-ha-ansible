@@ -4,6 +4,7 @@
 * Slave will be joining to init root
 * Loadbalancer is using haproxy
 * If everything just good, then run command: 'ansible-playbook -i hosts all.yaml'
+* Seems that it's wrong to have 2 masters (1 initroot and 1 master)
 
 # Tested on
 * AWS Ubuntu 18.04
