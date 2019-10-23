@@ -1,0 +1,110 @@
+- name: Inventory validation
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - assert:
+        that:
+          - "groups['machines'] | length == 1"
+
+- hosts: all
+  gather_facts: False
+  tasks:
+    - name: install python 2
+      raw: test -e /usr/bin/python || (sudo apt -y update && sudo apt install -y python-minimal)
+
+- hosts: all
+  become: true
+  tasks:
+    - name: "Install pre-req"
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - python
+        - openssl
+        - snapd
+
+    - name: Insert a line at the end of a file
+      lineinfile:
+        path: /root/.bashrc
+        line: PATH=$PATH:/snap/bin
+
+# Prepare for all k8s pre-requisites
+- hosts: all
+  become: true
+  tasks:
+    - name: "Check hostname"
+      shell: "hostname"
+      register: host_out
+
+    - debug: var=host_out.stdout_lines
+
+    - name: "Install docker dependencies"
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - apt-transport-https
+        - ca-certificates
+        - curl
+        - software-properties-common
+
+    - name: "Add APT key"
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        validate_certs: no
+        state: present
+
+    - name: "Get the version"
+      shell: "lsb_release -cs"
+      register: ubuntu_version
+
+    - name: "Add APT Repository"
+      apt_repository:
+        repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ubuntu_version.stdout}} stable
+        state: present
+
+    - name: "Install docker dependencies"
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - docker-ce=18.06.2~ce~3-0~ubuntu
+
+    - name: Copy docker config file
+      copy:
+        src: etc-docker-daemon.json
+        dest: /etc/docker/daemon.json
+
+    - name: Creates directory
+      file:
+        path: /etc/systemd/system/docker.service.d
+        state: directory
+
+    - name: Remove swapfile from /etc/fstab
+      mount:
+        name: swap
+        fstype: swap
+        state: absent
+
+    - name: Disable swap
+      shell: swapoff -a
+      when: ansible_swaptotal_mb > 0
+
+    - name: Restart docker
+      systemd:
+        state: restarted
+        daemon_reload: yes
+        name: docker
+
+    - name: "Add APT key install kubelet kubeadm kubectl"
+      apt_key:
+        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+        validate_certs: no
+        state: present
+
+    - name: "Add APT Repository install kubelet kubeadm kubectl"
+      apt_repository:
+        repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
+        state: present
+
+    - name: "Install kubeadm dependencies"
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - kubelet
+        - kubeadm
+        - kubectl
