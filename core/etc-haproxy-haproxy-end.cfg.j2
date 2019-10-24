@@ -17,7 +17,7 @@ backend nodes
     timeout server          1m
 
 frontend kubedashboard
-    bind *:443
+    bind *:31443
     mode tcp
     default_backend kubebackend
     timeout client          1m
