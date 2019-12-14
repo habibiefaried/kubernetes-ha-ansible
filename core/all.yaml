@@ -251,4 +251,5 @@
         dest: /root/tiller-clusterrolebinding.yaml
 
     - name: upgrade tiller
-      shell: kubectl apply -f /root/tiller-clusterrolebinding.yaml && /snap/bin/helm init --service-account tiller --upgrade
+      shell: kubectl apply -f /root/tiller-clusterrolebinding.yaml 
+      
