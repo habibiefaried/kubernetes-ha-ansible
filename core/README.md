@@ -12,3 +12,12 @@
 # CAUTION
 This is only for fresh install! The script to add either master/worker nodes is under development
 
+# Don't forget to
+Install (https://github.com/herbrandson/k8dash) with metrics-server (https://github.com/kubernetes-sigs/metrics-server).  With flags
+```
+# edit metric-server deployment to add the flags
+# args:
+# - --kubelet-insecure-tls
+# - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+$ kubectl edit deploy -n kube-system metrics-server
+```
