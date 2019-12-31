@@ -102,9 +102,12 @@
         repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
         state: present
 
+    - name: "Holding these apt using apt-mark"
+      shell: apt-mark hold kubelet kubeadm kubectl
+      
     - name: "Install kubeadm dependencies"
       apt: name={{item}} state=present update_cache=yes
       with_items:
-        - kubelet
+        - kubelet=1.16.2-00
         - kubeadm
         - kubectl
