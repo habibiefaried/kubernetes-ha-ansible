@@ -1,6 +1,4 @@
 * Core -> Is for installing whole setup for kubernetes
 * Preparation -> Only to install and configure prerequisites, right before joining cluster
-
-TODO
-* https://stackoverflow.com/questions/59291108/worker-start-to-fail-csinodeifo-error-updating-csinode-annotation.
-* Prevent update to 1.17
+* For allowing ports on k8s -> https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#check-required-ports
+* For allowing ports on weavenet -> https://www.weave.works/docs/net/latest/faq/

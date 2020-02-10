@@ -10,17 +10,16 @@
   gather_facts: False
   tasks:
     - name: install python 2
-      raw: test -e /usr/bin/python || (sudo apt -y update && sudo apt install -y python-minimal)
+      raw: test -e /usr/bin/python || (sudo apt -y update && sudo apt install -y python-minimal python-apt)
 
 - hosts: all
   become: true
   tasks:
     - name: "Install pre-req"
-      apt: name={{item}} state=present update_cache=yes
-      with_items:
-        - python
-        - openssl
-        - snapd
+      apt: 
+        name: ['python', 'openssl', 'snapd']
+        state: present
+        update_cache: yes
 
     - name: Insert a line at the end of a file
       lineinfile:
@@ -38,12 +37,10 @@
     - debug: var=host_out.stdout_lines
 
     - name: "Install docker dependencies"
-      apt: name={{item}} state=present update_cache=yes
-      with_items:
-        - apt-transport-https
-        - ca-certificates
-        - curl
-        - software-properties-common
+      apt: 
+        name: ['apt-transport-https', 'ca-certificates', 'curl', 'software-properties-common']
+        state: present
+        update_cache: yes
 
     - name: "Add APT key"
       apt_key:
@@ -61,9 +58,10 @@
         state: present
 
     - name: "Install docker dependencies"
-      apt: name={{item}} state=present update_cache=yes
-      with_items:
-        - docker-ce=18.06.2~ce~3-0~ubuntu
+      apt: 
+        name: ['docker-ce=18.06.2~ce~3-0~ubuntu']
+        state: present
+        update_cache: yes
 
     - name: Copy docker config file
       copy:
@@ -102,12 +100,9 @@
         repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
         state: present
 
-    - name: "Holding these apt using apt-mark"
-      shell: apt-mark hold kubelet kubeadm kubectl
-      
     - name: "Install kubeadm dependencies"
-      apt: name={{item}} state=present update_cache=yes
-      with_items:
-        - kubelet=1.16.2-00
-        - kubeadm
-        - kubectl
+      apt: 
+        # name:  ['kubelet=1.16.2-00', 'kubeadm', 'kubectl']
+        name:  ['kubelet', 'kubeadm', 'kubectl']
+        state: present
+        update_cache: yes
