@@ -21,3 +21,5 @@ Install (https://github.com/herbrandson/k8dash) with metrics-server (https://git
 # - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
 $ kubectl edit deploy -n kube-system metrics-server
 ```
+
+Note: use this -> https://raw.githubusercontent.com/herbrandson/k8dash/master/kubernetes-k8dash-nodeport.yaml
