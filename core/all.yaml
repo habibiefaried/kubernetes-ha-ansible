@@ -229,12 +229,6 @@
 - hosts: initroot
   become: true
   tasks:
-    - name: install helm chart
-      shell: snap install helm --classic
-
-    - name: init helm
-      shell: /snap/bin/helm init
-
     - name: svc account tiller for helm
       shell: kubectl create serviceaccount tiller --namespace kube-system
       ignore_errors: yes
