@@ -4,7 +4,7 @@
   tasks:
     - assert:
         that:
-          - "groups['machines'] | length == 1"
+          - "groups['machines'] | length >= 1"
 
 - hosts: all
   gather_facts: False
